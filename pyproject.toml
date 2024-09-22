@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "<your app name here>"
+version = "0.0.1"
+authors = [
+    { name="Mizuki Hikaru", email="mizuki@hikaru.org" },
+]
+description = "<description of your app here>"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "fastapi[standard]",
+    "authbase",
+]
+
+[project.urls]
+Homepage = "<homepage goes here>"
+Issues = "<issue tracker goes here>"
+
+[project.scripts]
+example = "example:main"
